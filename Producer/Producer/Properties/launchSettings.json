@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Producer": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\www\\RabbitMQ_Estudos\\ArquivosCSV_Teste\\notas.csv\r\nC:\\www\\RabbitMQ_Estudos\\ArquivosCSV_Teste\\frequencias.csv"
+    }
+  }
+}
