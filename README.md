@@ -1,36 +1,40 @@
-# Projeto de Exemplo - Sistema de Gest„o de Alunos
+# Projeto de Exemplo - Sistema de Gest√£o de Alunos
 
-Este projeto foi desenvolvido com fins did·ticos para demonstrar conceitos de processamento de dados e integraÁ„o de sistemas utilizando C#, RabbitMQ e MongoDB. O objetivo È simular um sistema de gest„o de alunos, onde os dados dos alunos s„o processados em arquivos CSV, enviados para uma fila RabbitMQ e consumidos para serem armazenados em um banco de dados MongoDB.
+Este projeto foi desenvolvido com fins did√°ticos para demonstrar conceitos de processamento de dados e integra√ß√£o de sistemas utilizando C#, RabbitMQ e MongoDB. O objetivo √© simular um sistema de gest√£o de alunos, onde os dados dos alunos s√£o processados em arquivos CSV, enviados para uma fila RabbitMQ e consumidos para serem armazenados em um banco de dados MongoDB.
 
 ## Estrutura do Projeto
 
-O projeto È dividido em dois componentes principais: **Producer** e **Consumer**.
+O projeto √© dividido em dois componentes principais: **Producer** e **Consumer**.
 
 ### Producer
 
-O Producer È respons·vel por processar arquivos CSV contendo dados de notas e frequÍncias dos alunos. Os dados s„o ent„o enviados para uma fila RabbitMQ para serem consumidos pelo Consumer. O Producer utiliza C# e as seguintes ferramentas:
+O Producer √© respons√°vel por processar arquivos CSV contendo dados de notas e frequ√™ncias dos alunos. Os dados s√£o ent√£o enviados para uma fila RabbitMQ para serem consumidos pelo Consumer. O Producer utiliza C# e as seguintes ferramentas:
 
 - **CsvHelper**: para processamento de arquivos CSV.
-- **RabbitMQ.Client**: para integraÁ„o com a fila RabbitMQ.
-- **Newtonsoft.Json**: para serializaÁ„o de objetos para JSON.
+- **RabbitMQ.Client**: para integra√ß√£o com a fila RabbitMQ.
+- **Newtonsoft.Json**: para serializa√ß√£o de objetos para JSON.
 
 ### Consumer
 
-O Consumer È respons·vel por consumir os dados da fila RabbitMQ e armazen·-los em um banco de dados MongoDB. O Consumer utiliza C# e as seguintes ferramentas:
+O Consumer √© respons√°vel por consumir os dados da fila RabbitMQ e armazen√°-los em um banco de dados MongoDB. O Consumer utiliza C# e as seguintes ferramentas:
 
-- **RabbitMQ.Client**: para integraÁ„o com a fila RabbitMQ.
-- **MongoDB.Driver**: para integraÁ„o com o banco de dados MongoDB.
+- **RabbitMQ.Client**: para integra√ß√£o com a fila RabbitMQ.
+- **MongoDB.Driver**: para integra√ß√£o com o banco de dados MongoDB.
 
 ## Como Executar
 
 Para executar o projeto, siga as etapas abaixo:
 
-1. Certifique-se de ter o RabbitMQ e o MongoDB instalados e em execuÁ„o em sua m·quina.
-2. Clone este repositÛrio em sua m·quina local.
+1. Certifique-se de ter o RabbitMQ e o MongoDB instalados e em execu√ß√£o em sua m√°quina.
+2. Clone este reposit√≥rio em sua m√°quina local.
 3. Abra o projeto em seu ambiente de desenvolvimento preferido (Visual Studio, Visual Studio Code, etc.).
-4. Execute o Producer e o Consumer em inst‚ncias separadas.
-5. Siga as instruÁıes de uso fornecidas em cada componente para processar os arquivos CSV e consumir os dados da fila RabbitMQ.
+4. Execute o Producer e o Consumer em inst√¢ncias separadas.
+5. Siga as instru√ß√µes de uso fornecidas em cada componente para processar os arquivos CSV e consumir os dados da fila RabbitMQ.
 
-Este projeto È apenas para fins educacionais e pode ser modificado e estendido conforme necess·rio para atender a diferentes requisitos e cen·rios de uso.
+Este projeto √© apenas para fins educacionais e pode ser modificado e estendido conforme necess√°rio para atender a diferentes requisitos e cen√°rios de uso.
 
 **Desenvolvimento em andamento**
+
+![image](https://github.com/JuliaOliveiraa/RabbitMQ_Estudos/assets/95725288/02234bd2-2324-426a-867a-635cf1c8fd35)
+
+![image](https://github.com/JuliaOliveiraa/RabbitMQ_Estudos/assets/95725288/29a84b90-f623-4acb-91eb-c187f0aed9cf)
