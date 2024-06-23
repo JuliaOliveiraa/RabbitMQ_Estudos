@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Producer
 {
@@ -9,11 +10,18 @@ namespace Producer
             var matricula = notas["Matricula"].ToString();
             var email = notas["Email Aluno"].ToString();
 
+            var notasAluno = new Dictionary<string, object>();
+
+            foreach (var notaKey in notas.Keys)
+            {
+                notasAluno.Add(notaKey, notas[notaKey]);
+            }
+
             var aluno = new Aluno
             {
                 Matricula = matricula,
                 Email = email,
-                Notas = notas,
+                Notas = notasAluno,
                 Status = frequencias.Exists(f => f["Matricula"].ToString() == matricula) ? AlunoStatus.Sucesso : AlunoStatus.FrequenciaNaoRegistrada
             };
 
