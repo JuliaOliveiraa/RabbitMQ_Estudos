@@ -9,7 +9,7 @@ namespace Consumer.Infrastructure
 
         private MongoDBConnection() { }
 
-        public static IMongoDatabase GetInstance()
+        public static IMongoDatabase GetInstance(string connectionString, string databaseName)
         {
             if (instance == null)
             {
@@ -17,8 +17,8 @@ namespace Consumer.Infrastructure
                 {
                     if (instance == null)
                     {
-                        var client = new MongoClient("mongodb://localhost:27017");
-                        instance = client.GetDatabase("localTeste");
+                        var client = new MongoClient(connectionString);
+                        instance = client.GetDatabase(databaseName);
                     }
                 }
             }

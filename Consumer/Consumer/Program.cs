@@ -14,7 +14,10 @@ namespace Consumer
     {
         static void Main(string[] args)
         {
-            var database = MongoDBConnection.GetInstance();
+            var connectionString = "mongodb://localhost:27017";
+            var databaseName = "alunos";
+
+            var database = MongoDBConnection.GetInstance(connectionString, databaseName);
 
             var connection = RabbitMQConnection.GetInstance();
             using (var channel = connection.CreateModel())

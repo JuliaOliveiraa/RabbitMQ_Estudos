@@ -14,8 +14,8 @@ namespace Consumer.Services
 
         public void ProcessarAluno(Aluno aluno)
         {
-            // Aqui você pode adicionar lógica adicional para definir o status do aluno, se necessário
-            _alunoRepository.InserirAluno(aluno);
+            //logica a implementar
+            _alunoRepository.InserirAlunoAsync(aluno);
         }
     }
 }
