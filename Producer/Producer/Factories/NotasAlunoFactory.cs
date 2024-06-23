@@ -14,6 +14,11 @@ namespace Producer
 
             foreach (var notaKey in notas.Keys)
             {
+                if (notaKey == "Matricula" || notaKey == "Email Aluno" || notaKey == "Nome Aluno")
+                {
+                    continue;
+                }
+
                 notasAluno.Add(notaKey, notas[notaKey]);
             }
 
